@@ -6,7 +6,15 @@
 	<title>New MFL</title>
 </head>
 <body style="background-color: #ffffff;">
-	<img src="logo.jpg" style="width: 10%;"><img src="fb.png" style="width: 10%;"><br>
-	<img src="inspirations/w-shipping-html5-responsive-theme-desktop-full.jpg" style="width: 100%;">
+	<img src="logo.jpg" style="width: 10%;"><img src="fb.png" style="width: 10%;"><input type="text" name="book_id" id="book_id">
+	<br><img src="inspirations/w-shipping-html5-responsive-theme-desktop-full.jpg" style="width: 100%; margin-top: 10px;">
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#book_id").on('keyup', function (e) {
+	    if (e.key === 'Enter' || e.keyCode === 13) {
+	        alert(document.getElementById('book_id').value);
+	    }
+	});
+</script>
